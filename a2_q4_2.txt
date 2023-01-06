@@ -1,0 +1,22 @@
+## FILE:
+max:0.125b1+0.115b2+0.105b3+0.095b4+0.085b5;
+subject_to:b1<=0.4;
+b2<=0.4;
+b3<=0.4;
+b4<=0.4;
+b5<=0.4;
+b1+b2+b3+b4+b5=1.000050;
+0.008b1+0.003b2-0.004b3-0.002b4>=0;
+2b1+1b2-b4-3b5<=0;
+
+---- START_CODE
+
+library(lpSolveAPI)
+
+x4 = read.lp("d:\\a2_q4_2.txt" , "lp")
+
+solve (x4)
+get.objective(x4)
+get.variables(x4)
+
+---- END_CODE

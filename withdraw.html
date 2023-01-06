@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <style>
+    .button{
+      background-color: coral;
+      font-family: monospace;
+
+    }
+  </style>
+<body style="background-color: paleturquoise;">
+<center><h2 style="font-family: 'Courier New';">Withraw</h2><br><br><br><br><br><br>
+
+<form action="withdraw.php" method = "POST">
+  <label for="accountid"><b>Account Number</b></label>
+      <input type="text" placeholder="Enter your Account Number" name="accountid" required> <br> <br> 
+      <label for="amount"><b>Amount</b></label>
+        <input type="text" placeholder="Enter amount" name="amount" required> <br> <br> 
+      
+      <div class="clearfix">
+        <button class=button type="button" onclick="window.location.href='index.html'" class="cancelbtn"><b> Cancel </b> </button>
+        <button class=button type="submit" name = "submit" class="signupbtn"><b> Submit </b> </button>
+      </div>
+</div>
+</form> 
+</center>
+</body>
+</html>
